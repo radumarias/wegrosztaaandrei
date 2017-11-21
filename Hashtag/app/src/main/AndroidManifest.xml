@@ -19,7 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".android.ui.MainActivity"></activity>
+        <activity android:name=".android.ui.MainActivity" />
+
+        <service
+            android:name=".android.io.FetchHashtagsIntentService"
+            android:exported="false" />
     </application>
 
 </manifest>

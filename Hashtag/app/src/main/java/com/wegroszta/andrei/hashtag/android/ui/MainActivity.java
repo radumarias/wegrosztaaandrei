@@ -1,6 +1,7 @@
 package com.wegroszta.andrei.hashtag.android.ui;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.wegroszta.andrei.hashtag.R;
+import com.wegroszta.andrei.hashtag.android.io.FetchHashtagsIntentService;
 import com.wegroszta.andrei.hashtag.entities.Hashtag;
 import com.wegroszta.andrei.hashtag.models.HashtagModel;
 import com.wegroszta.andrei.hashtag.models.db.SqliteHashtagStorage;
@@ -47,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements HashtagRecyclerVi
         hashtagPresenter = new HashtagPresenter(new HashtagModel(new SqliteHashtagStorage(this)));
         hashtagPresenter.bindView(this);
         hashtagPresenter.readHashtags();
+
+        Intent intent = new Intent(this, FetchHashtagsIntentService.class);
+        startService(intent);
     }
 
     @Override
