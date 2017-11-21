@@ -1,2 +1,6 @@
-# wegrosztaaandrei
-what your friends are saying about recent trends
+- defineste o lista de twitter hashtags care te intereseaza, gen #rezist
+- fa un service care face fetch periodic (o data pe ora sau ceva) cu twitter api la ce scriu friends tai despre hashtags ce le-ai definit
+- cand ai un tweet nou arata un notification cu user si ceva summary si la click sa te duca la details
+- de apuci:
+	- tine lista de tweets care fac match si sa o poti vedea
+	- arata tweets pe o harta
