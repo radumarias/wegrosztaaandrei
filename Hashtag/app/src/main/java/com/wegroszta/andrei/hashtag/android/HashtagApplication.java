@@ -1,4 +1,4 @@
-package com.wegroszta.andrei.hashtag;
+package com.wegroszta.andrei.hashtag.android;
 
 import android.app.Application;
 

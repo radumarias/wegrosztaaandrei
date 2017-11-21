@@ -2,4 +2,7 @@
     <string name="app_name">Hashtag</string>
     <string name="com.twitter.sdk.android.CONSUMER_KEY">5uQatQ9pgdFQiDNjlXOSzU8Hn</string>
     <string name="com.twitter.sdk.android.CONSUMER_SECRET">wo1j8m0w9WaSE0NrnWN1KRDB79njWGEZpfpPYOo4EflXfDeWaR</string>
+    <string name="add_hashtag">Add hashtag</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
